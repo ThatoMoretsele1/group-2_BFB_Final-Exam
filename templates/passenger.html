@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Passenger Dashboard</title>
+<link rel="stylesheet" href="../static/passenger.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+
+      <!-- CLICKABLE LOGO -->
+      <div class="logo">
+        <a href="main.html">TaxiCoN</a>
+      </div>
+
+      <!-- HEADER BUTTONS -->
+      <div class="header-actions">
+        <button class="header-btn" onclick="window.location.href='main.html'">Book New Trip</button>
+        <button class="header-btn" onclick="window.location.href='/logout'">Logout</button>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- BODY CONTENT -->
+  <div class="container">
+    <h2>Welcome back, Bradley!</h2>
+    <p>Here's your travel overview and recent trips</p>
+
+    <!-- KPI CARDS -->
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-title">Total Trips</div>
+        <div class="card-value">24</div>
+        <div class="card-sub">+3 this month</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Total Distance</div>
+        <div class="card-value">3,420 km</div>
+        <div class="card-sub">+420 km this month</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Total Spent</div>
+        <div class="card-value">R8,650</div>
+        <div class="card-sub">vs traditional taxis: R2,340 saved</div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Time Saved</div>
+        <div class="card-value">18.5 h</div>
+        <div class="card-sub">no waiting in queues</div>
+      </div>
+    </div>
+
+
+    <!-- Recent Trips -->
+    <h3>Recent Trips</h3>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-title">Cape Town → Johannesburg</div>
+        <div class="card-value">R450</div>
+        <div class="card-sub">Jan 15 | Duration: 4h 30m | Driver: Sipho Mthembu</div>
+        <button class="card-btn">View Details</button>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Johannesburg → Pretoria</div>
+        <div class="card-value">R180</div>
+        <div class="card-sub">Jan 14 | Duration: 45m | Driver: Nomsa Dlamini</div>
+        <button class="card-btn">View Details</button>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Pretoria → Johannesburg</div>
+        <div class="card-value">R180</div>
+        <div class="card-sub">Jan 13 | Duration: 50m | Driver: Thabo Molefe</div>
+        <button class="card-btn">View Details</button>
+      </div>
+    </div>
+
+
+    <!-- UPCOMING TRIP -->
+    <div class="card card-large">
+      <h3>Upcoming Trip 🚍</h3>
+      <p>Cape Town → Durban | 08:00</p>
+
+      <div class="route-stats">
+        <div>Driver: Sarah Nkosi</div>
+        <div>Vehicle: Mercedes Sprinter</div>
+        <div>Cost: R520</div>
+      </div>
+
+      <button class="card-btn">Track Trip</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Signup - TaxiCoN</title>
+  <link rel="stylesheet" href="../static/driverSignup.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="/">
+        <span class="logo-text">TaxiCoN</span>
+      </a>
+    </div>
+
+    <!-- Card -->
+    <div class="card">
+      <div class="card-header">
+        <h2>Driver Registration</h2>
+        <p>Register as a TaxiCoN driver to start transporting passengers</p>
+      </div>
+
+      <div class="card-content">
+
+        <!-- DRIVER SIGNUP FORM -->
+        <form action="/driver_signup" method="POST">
+
+          <!-- First / Last Name -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input id="first-name" name="first_name" type="text" placeholder="Enter first name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input id="last-name" name="last_name" type="text" placeholder="Enter last name" required>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="Enter phone number" required>
+          </div>
+
+          <!-- License Plate -->
+          <div class="form-group">
+            <label for="license-plate">License Plate</label>
+            <input id="license-plate" name="license_plate" type="text" placeholder="e.g. ND 123-456" required>
+          </div>
+
+          <!-- Vehicle Color -->
+          <div class="form-group">
+            <label for="vehicle-color">Vehicle Color</label>
+            <input id="vehicle-color" name="vehicle_color" type="text" placeholder="e.g. White, Silver, Blue" required>
+          </div>
+
+          <!-- Password / Confirm Password -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" placeholder="Create password" required>
+            </div>
+
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input id="confirm-password" name="confirm_password" type="password" placeholder="Confirm password" required>
+            </div>
+          </div>
+
+          <!-- Terms -->
+          <div class="form-group terms">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">
+              I agree to the <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a>
+            </label>
+          </div>
+
+          <!-- Create Account -->
+          <button type="submit" class="btn">Register Driver</button>
+
+        </form>
+
+        <p class="signin">
+          Already registered? <a href="/driver_login">Sign in here</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Back Home -->
+    <p class="back-home">
+      <a href="/">← Back to Home</a>
+    </p>
+
+  </div>
+</body>
+</html>

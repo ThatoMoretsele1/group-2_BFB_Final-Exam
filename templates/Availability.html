@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaxiCoN - Nearest Stations</title>
+  <link rel="stylesheet" type="text/css" href="../static/Availability.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="{{ url_for('main') }}" class="btn-ghost">
+       ← Back to Home
+      </a>
+      <div class="logo">
+        <span>TaxiCoN</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="page-title">
+      <h2>Nearest Stations</h2>
+      <div class="location">
+        📍 From: 342 Acardia Street, Pretoria
+      </div>
+    </div>
+
+    <!-- Stations Grid -->
+    <div class="stations-grid">
+      <!-- Station Card -->
+      <div class="station-card available">
+        <div class="station-header">
+          <div class="station-info">
+            <h3>Dr Savage Station</h3>
+            <p>950 Savage Road</p>
+          </div>
+          <span class="badge">Available</span>
+        </div>
+
+        <div class="station-details">
+          <div class="detail">
+            🧭 <span>Distance</span>
+            <strong>0.8 km</strong>
+          </div>
+          <div class="timedetail">
+            ⏰ <span>ETA</span>
+            <strong>3 min</strong>
+          </div>
+          <div class="detail">
+            👥 <span>Seats</span>
+            <strong>8</strong>
+          </div>
+          <div class="detail">
+            🚗 <span>Next</span>
+            <strong>08:30</strong>
+          </div>
+        </div>
+
+        <div class="price">R320</div>
+
+        <div class="station-actions">
+          <a href="{{ url_for('book') }}" class="btn" style="font-size: 1.1rem; padding: 10px 0;">Book</a>
+        </div>
+      </div>
+
+      <!-- Station Card -->
+      <div class="station-card limited">
+        <div class="station-header">
+          <div class="station-info">
+            <h3>Central Plaza Hub</h3>
+            <p>456 Main Street, Downtown</p>
+          </div>
+          <span class="badge">Limited Seats</span>
+        </div>
+
+        <div class="station-details">
+          <div class="detail">🧭 <span>Distance</span> <strong>1.2 km</strong></div>
+          <div class="timedetail">⏰ <span>ETA</span> <strong>5 min</strong></div>
+          <div class="detail">👥 <span>Seats</span> <strong>3</strong></div>
+          <div class="detail">🚗 <span>Next</span> <strong>08:45</strong></div>
+        </div>
+
+        <div class="price">R48.20</div>
+
+        <div class="station-actions">
+          <a href="{{ url_for('book') }}" class="btn" style="font-size: 1.1rem; padding: 10px 0;">Book</a>
+        </div>
+      </div>
+
+      <!-- Station Card -->
+      <div class="station-card full">
+        <div class="station-header">
+          <div class="station-info">
+            <h3>University Campus Stop</h3>
+            <p>321 Campus Drive, University Area</p>
+          </div>
+          <span class="badge">Full</span>
+        </div>
+
+        <div class="station-details">
+          <div class="detail">🧭 <span>Distance</span> <strong>2.8 km</strong></div>
+          <div class="timedetail">⏰ <span>ETA</span> <strong>12 min</strong></div>
+          <div class="detail">👥 <span>Seats</span> <strong>0</strong></div>
+          <div class="detail">🚗 <span>Next</span> <strong>09:15</strong></div>
+        </div>
+
+        <div class="price">R67.50</div>
+
+        <div class="station-actions">
+          <span class="btn disabled" style="font-size: 1.1rem; padding: 10px 0;">Full</span>
+        </div>
+      </div>
+
+      <!-- Add more station cards as needed -->
+    </div>
+  </main>
+</body>
+</html>

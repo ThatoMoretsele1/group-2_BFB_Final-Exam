@@ -1,0 +1,92 @@
+/* Role Selection Page CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Logo */
+.logo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.logo .logo-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: green;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.card-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+.card-header .description {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Continue Section */
+.continue {
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+.btn-outline {
+  padding: 0.7rem;
+  border: 1px solid #d1d5db;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  border-color: green;
+  color: green;
+  transform: scale(1.02);
+}
+
+/* Back to home */
+.back-home {
+  text-align: center;
+  margin-top: 1rem;
+}
+.back-home a {
+  font-size: 0.85rem;
+  color: #6b7280;
+  transition: color 0.3s;
+}
+.back-home a:hover {
+  color: green;
+}

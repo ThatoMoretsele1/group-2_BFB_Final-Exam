@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaxiCoN</title>
+  <link rel="stylesheet" type="text/css" href="../static/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo"><h1>TaxiCoN</h1></div>
+      <nav class="nav">
+        <a href="../static/main.html">Home</a>
+        <a href="ABOUT.html">About</a>
+        <a href="SERVICES.html">Services</a>
+        <a href="CONTACT.html">Contact</a>
+        <a href="HELP.html">Help</a>
+      </nav>
+      <div class="auth-buttons">
+        <a href="/login" class="btn-outline button-link">Login</a>
+        <a href="/signup" class="btn-primary button-link">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Booking Section -->
+  <section class="booking">
+    <div class="booking-card">
+      <h3>Book Your Ride</h3>
+      <p>Find available transport for your journey</p>
+
+      <form method="post">
+        <div class="form-grid">
+          <div class="form-group">
+            <select name="pickup" required>
+              <option disabled selected value="">Select Pickup</option>
+              {% for loc in locations %}
+                <option value="{{ loc }}">{{ loc }}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div class="form-group">
+            <select name="dropoff" required>
+              <option disabled selected value="">Select Dropoff</option>
+              {% for loc in locations %}
+                <option value="{{ loc }}">{{ loc }}</option>
+              {% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="date">Travel Date</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+
+          <div class="form-group">
+            <label for="time">Preferred Time</label>
+            <input type="time" id="time" name="time" required />
+          </div>
+        </div>
+
+        <div class="booking-buttons" style="display: flex; justify-content: center; margin-top: 20px;">
+          <button type="submit" class="btn-primary" formaction="/check_availability">
+            Check Availability
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

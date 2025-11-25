@@ -1,0 +1,184 @@
+/* Basic Reset and Font */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #111827;
+  line-height: 1.5;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: #ecf6ee;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 12px 12px;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 2rem;
+  color: green;
+}
+
+header nav button {
+  background: green;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+header nav button:hover {
+  transform: scale(1.02);
+}
+
+/* Main Layout */
+main {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #d1d5db;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.tab.active {
+  background: green;
+  color: #fff;
+  border-color: green;
+}
+
+.tab:hover {
+  border-color: green;
+  color: #fff;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Cards */
+.card {
+  background: #ecf6ee;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+/* Inputs */
+input,
+select {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 1rem;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #bfbfbf;
+  box-shadow: 0 0 6px rgba(132, 130, 130, 0.4);
+}
+
+/* Buttons */
+button {
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  background: green;
+  color: #fff;
+}
+
+button:hover {
+  transform: scale(1.02);
+}
+
+button.danger {
+  background: green ;
+}
+
+/* UNIVERSAL BUTTON STYLE */
+button {
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  background: green;
+  color: #fff;
+  transition: all 0.25s ease;
+}
+
+/* UNIVERSAL HOVER FOR ALL BUTTONS */
+button:hover {
+  background: #0f7d0f;      /* darker green */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 128, 0, 0.35);
+}
+
+/* SPECIAL BUTTON (danger) */
+button.danger {
+  background: green;
+}
+
+button.danger:hover {
+  background: green;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(200, 70, 70, 0.35);
+}

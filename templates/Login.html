@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaxiCoN - Login</title>
+  <link rel="stylesheet" href="../static/Login.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <span class="logo-text">TaxiCoN</span>
+    </div>
+
+    <!-- Card -->
+    <div class="card">
+      <div class="card-header">
+        <h2>Welcome Back</h2>
+        <p class="description">Sign in to your account to continue</p>
+      </div>
+
+      <div class="card-content">
+        <form method="post" action="/login">
+          <div class="form-group">
+            <label for="username">Username or Email</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username or email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+
+          <div class="form-row">
+            <div class="remember">
+              <input type="checkbox" id="remember" name="remember">
+              <label for="remember">Remember me</label>
+            </div>
+            <a href="#" class="link">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn primary">Sign In</button>
+        </form>
+
+        <div class="extra">
+          <p>Don’t have an account? <a href="/signup" class="link">Sign up here</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="back-home">
+      <a href="/" class="link">← Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>

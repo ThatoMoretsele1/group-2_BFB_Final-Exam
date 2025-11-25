@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Payment - TaxiCoN</title>
+  <link rel="stylesheet" href="../static/payment.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="main.html" class="btn ghost">
+        ← Back 
+      </a>
+      <div class="logo">
+        <span>TaxiCoN</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <!-- Title -->
+    <section class="section-title">
+      <h2>Secure Payment</h2>
+      <p>Complete your booking with our secure payment system</p>
+    </section>
+
+    <div class="grid">
+      <!-- Payment Methods -->
+      <div class="col-2">
+        <div class="card">
+          <h3>Payment Method</h3>
+          <p class="subtitle">Choose your preferred payment option</p>
+
+          <div class="tabs">
+            <button class="tab active">Card Payment</button>
+            <button class="tab">Voucher Code</button>
+          </div>
+
+          <div class="tab-content">
+            <!-- Card Payment -->
+            <form class="form">
+              <label>Card Number</label>
+              <input type="text" placeholder="1234 5678 9012 3456">
+
+              <div class="form-row">
+                <div>
+                  <label>Expiry Date</label>
+                  <input type="text" placeholder="MM/YY">
+                </div>
+                <div >
+                  <label>CVV</label>
+                  <input type="password" placeholder="123">
+                </div>
+              </div>
+
+              <label>Cardholder Name</label>
+              <input type="text" placeholder="John Doe">
+
+              <label>Billing Address</label>
+              <input type="text" placeholder="123 Main Street, City, Country">
+
+              <div class="checkbox">
+                <input type="checkbox" id="save-card">
+                <label for="save-card">Save this card for future payments</label>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+        <!-- Security Information -->
+        <div class="card mt">
+          <h3>Secure Payment</h3>
+          <ul class="secure-list">
+            <li>🛡 Fraud protection</li>
+            <li>✅ Secure data storage</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Booking Summary -->
+      <div class="col-1">
+        <div class="card sticky">
+          <h3>Booking Summary</h3>
+          <p class="subtitle">Booking #12345</p>
+
+          <div class="summary">
+            <p><strong>Route:</strong> Riverside Station → City Center</p>
+            <p><strong>Date & Time:</strong> 2024-01-15 at 08:30</p>
+            <p><strong>Passengers:</strong> 2</p>
+            <p><strong>Driver:</strong> Thato Moretsele</p>
+          </div>
+
+          <hr>
+
+          <div class="price">
+            <p>Base fare (2 passengers): <span>R52</span></p>
+            <p>Service fee: <span>R10.50</span></p>
+            <p class="discount">Discount (WELCOME10): <span>-R5</span></p>
+            <hr>
+            <p class="total">Total: <span>R49.99</span></p>
+          </div>
+
+          <button class="btn primary full">Pay R49</button>
+          <p class="terms">By completing this payment, you agree to our Terms of Service and Privacy Policy</p>
+        </div>
+
+        <!-- Recent Payments -->
+        <div class="card mt">
+          <h3>Recent Payments</h3>
+          <div class="history">
+            <div class="row">
+              <div>
+                <p class="bold">Booking #12344</p>
+                <p class="muted">Jan 10, 2024</p>
+              </div>
+              <div class="right">
+                <p class="bold">R42</p>
+                <span class="badge">Paid</span>
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <p class="bold">Booking #12343</p>
+                <p class="muted">Jan 8, 2024</p>
+              </div>
+              <div class="right">
+                <p class="bold">R38</p>
+                <span class="badge">Paid</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn outline full">View All Payments</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

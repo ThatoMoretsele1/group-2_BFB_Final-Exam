@@ -1,0 +1,219 @@
+/* ===== Global ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+  line-height: 1.5;
+}
+
+.container {
+  width: 70%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+h2.page-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #166534;
+}
+
+p.page-subtitle {
+  margin-bottom: 20px;
+  color: #6b7280;
+}
+
+/* ===== Header ===== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e6f3e6;
+  padding: 16px 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.header-logo span {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #166534;
+  letter-spacing: 0.5px;
+}
+
+.button-ghost {
+  text-decoration: none;
+  color: #166534;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.button-ghost:hover {
+  color: #14532d;
+}
+
+/* ===== Grid Layout ===== */
+.grid {
+  display: flex;
+  gap: 20px;
+}
+
+.grid-3 > .form-section {
+  flex: 2;
+}
+
+.grid-3 > .summary-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ===== Card ===== */
+.card {
+  background: #e6f3e6; /* header green */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 16px;
+}
+
+.card-title {
+  margin-top: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #166534;
+  margin-bottom: 12px;
+}
+
+/* ===== Trip Info ===== */
+.trip-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.trip-arrow {
+  flex: 1;
+  text-align: center;
+}
+
+/* ===== Trip Stats ===== */
+.trip-stats {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  color: #4b5563;
+}
+
+/* ===== Form Inputs ===== */
+label {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #374151;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 12px;
+  background-color: #ffffff;
+  color: #111827;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #e1dddd;
+  box-shadow: 0 0 6px rgba(132, 130, 130, 0.3);
+}
+
+/* ===== Buttons ===== */
+button,
+.button-primary,
+.button-outline {
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.button-primary {
+  background-color: #166534;
+  color: #fff;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+.button-primary:hover {
+  background-color: #14532d;
+  transform: scale(1.02);
+}
+
+.button-outline {
+  background: #ffffff;
+  border: 1.5px solid #166534;
+  color: #166534;
+}
+
+.button-outline:hover {
+  background: #f0fdf4;
+}
+
+/* ===== Booking Summary ===== */
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.summary-row.total {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #111827;
+}
+
+.terms {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 10px;
+  color: #6b7280;
+}
+
+/* ===== Driver Info ===== */
+.driver-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.driver-avatar {
+  font-size: 32px;
+  background: #f0fdf4;
+  color: #166534;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+/* ===== Sticky Summary ===== */
+.sticky {
+  position: sticky;
+  top: 20px;
+}

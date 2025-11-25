@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Commuter Dashboard</title>
+  <link rel="stylesheet" href="../static/track.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+       <span>TaxiCoN</span>
+    </div>
+    <nav>
+      <button onclick="window.location.href='/'" class="logout"> Logout</button>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h2>Welcome, Bradley!</h2>
+    <p>Please confirm your bookings below or book an available transport:</p>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab active" data-tab="bookings">Available Options</button>
+    </div>
+
+    <!-- Dynamic bookings -->
+    <section class="tab-content active" id="bookings">
+      <h3>Matching Drivers</h3>
+
+      {% if matches|length == 0 %}
+        <p>No transport found for your route/time.</p>
+      {% endif %}
+
+      {% for m in matches %}
+      <div class="card">
+        <p><strong>{{ m.status }}</strong></p>
+        <p>From: {{ m.pickup }} → {{ m.dropoff }}</p>
+        <p>Date: {{ m.date }} | Time: {{ m.time }}</p>
+        <p>Driver: {{ m.driver_name }} | Vehicle: {{ m.vehicle }}</p>
+
+        <form action="/book" method="POST">
+          <input type="hidden" name="driver_name" value="{{ m.driver_name }}">
+          <input type="hidden" name="pickup" value="{{ m.pickup }}">
+          <input type="hidden" name="dropoff" value="{{ m.dropoff }}">
+          <input type="hidden" name="date" value="{{ m.date }}">
+          <input type="hidden" name="time" value="{{ m.time }}">
+          <button class="danger">Book</button>
+        </form>
+      </div>
+      {% endfor %}
+
+    </section>
+  </main>
+
+  <script>
+    const tabs = document.querySelectorAll(".tab");
+    const contents = document.querySelectorAll(".tab-content");
+
+    tabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        contents.forEach(c => c.classList.remove("active"));
+        tab.classList.add("active");
+        document.getElementById(tab.dataset.tab).classList.add("active");
+      });
+    });
+  </script>
+
+</body>
+</html>

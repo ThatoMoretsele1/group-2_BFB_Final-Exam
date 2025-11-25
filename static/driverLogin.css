@@ -1,0 +1,140 @@
+/* Login page CSS - gold theme */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Logo */
+.logo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.logo .logo-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  color: #D4AF37; /* gold */
+}
+
+/* Card */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.card-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+.card-header .description {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 1rem;
+}
+label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  color: #374151;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+input:focus {
+  border-color: rgb(225, 221, 221);
+  box-shadow: 0 0 6px rgb(132, 130, 130);
+  outline: none;
+}
+
+/* Row */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.link {
+  color: #D4AF37; /* gold */
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: #D4AF37; /* gold */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: #B9972F; /* darker gold hover */
+  transform: scale(1.02);
+}
+
+.extra {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Back to home */
+.back-home {
+  text-align: center;
+  margin-top: 1rem;
+}
+.back-home a {
+  font-size: 0.85rem;
+  color: #6b7280;
+  transition: color 0.3s;
+}
+.back-home a:hover {
+  color: #D4AF37; /* gold */
+}

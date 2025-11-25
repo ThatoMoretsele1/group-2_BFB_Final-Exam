@@ -1,0 +1,263 @@
+/* General Reset and Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  color: #111827;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Layout Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background: #ecf6ee;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: green;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Section Titles */
+.section-title h2 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.section-title p {
+  color: #6b7280;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+.sticky {
+  position: sticky;
+  top: 20px;
+}
+
+/* Subtitles */
+.subtitle {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 12px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #d1d5db;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  border-color: green;
+  color: green;
+}
+
+.tab.active {
+  background: green;
+  color: #fff;
+  border-color: green;
+}
+
+/* Form */
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: rgb(225, 221, 221);
+  box-shadow: 0 0 6px rgb(132, 130, 130);
+  outline: none;
+}
+
+/* Checkbox */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+/* Accepted Cards Section */
+.accepted .cards {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.accepted .cards span {
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 6px;
+  background: green;
+}
+
+/* Lists and Summary */
+.secure-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.secure-list li {
+  margin: 6px 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.summary p {
+  margin: 6px 0;
+}
+
+.price p {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 0;
+}
+
+.discount {
+  color: green;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* History Section */
+.history .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.badge {
+  background: green;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: green;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: green;
+  transform: scale(1.02);
+}
+
+.btn.outline {
+  border: 1px solid green;
+  background: transparent;
+  color: green;
+}
+
+.btn.outline:hover {
+  background: green;
+  color: #fff;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: none;
+  color: green;
+  font-size: large;
+  margin-right: 800px;
+}
+
+.terms {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-top: 10px;
+  text-align: center;
+}

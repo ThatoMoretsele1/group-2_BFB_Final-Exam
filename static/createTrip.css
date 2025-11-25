@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: rgb(227, 231, 227);
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+}
+
+.header-left .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #28a745; /* green */
+}
+
+.header-right .badge {
+    background: #28a745; /* green */
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    color: white;
+}
+
+.header-right .btn {
+    margin-left: 5px;
+    padding: 10px 10px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: #666;
+    border-radius: 4px;
+}
+
+.header-right .logout {
+    border: 1px solid #28a745; /* green border */
+    background: transparent;
+    color: #28a745; /* green text */
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+/* --- CREATE TRIP FORM CARD --- */
+.trip-form-card {
+    background: #e9f7ec;     /* very light green */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;          
+}
+
+.trip-form .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2d6a33; /* dark green */
+}
+
+/* Inputs and Selects */
+.trip-form input,
+.trip-form select {
+    padding: 10px;
+    border: 1px solid #99c7a2; /* greenish border */
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;            /* Fill the container */
+    box-sizing: border-box;  /* Include padding in width */
+}
+
+/* Create button */
+.create-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    background: #28a745; /* green */
+    color: white;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    opacity: 0.9;
+}

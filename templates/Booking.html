@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Page</title>
+  <link rel="stylesheet" href="../static/Booking.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a href="Availability.html" class="button-ghost">
+      ← Back to Dashboard
+    </a>
+    <div class="header-logo">
+      <span>TaxiCoN</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="page-title">Complete Your Booking</h2>
+    <p class="page-subtitle">Review your trip details and confirm your reservation</p>
+
+    <div class="grid grid-3">
+
+      <!-- Booking Form -->
+      <div class="form-section">
+
+        <!-- Trip Details -->
+        <div class="card">
+          <h3 class="card-title">Trip Details</h3>
+          <div class="trip-info">
+            <div class="trip-point">
+              <p class="time">08:30</p>
+              <p class="location">🏁 Riverside Station</p>
+            </div>
+            <div class="trip-arrow">→ 🚗 →</div>
+            <div class="trip-point">
+              <p class="time">09:15</p>
+              <p class="location">🏁 City Center</p>
+            </div>
+          </div>
+          <div class="trip-stats">
+            <div>⏱ Duration: 45 minutes</div>
+            <div>🪑 Seats available: 8</div>
+          </div>
+        </div>
+
+        <!-- Passenger Info -->
+        <div class="card">
+          <h3 class="card-title">Passenger Information</h3>
+          <label>Number of Passengers</label>
+          <input type="number" min="1" max="8" value="1">
+
+          <label>Contact Name</label>
+          <input type="text" value="Alex Johnson">
+
+          <label>Contact Phone</label>
+          <input type="tel" value="+1 (555) 123-4567">
+
+          <label>Special Requests (Optional)</label>
+          <input type="text" placeholder="Any special requirements or notes">
+        </div>
+
+      </div>
+
+      <!-- Booking Summary & Driver Info -->
+      <div class="summary-section">
+
+        <!-- Booking Summary -->
+        <div class="card sticky">
+          <h3 class="card-title">Booking Summary</h3>
+          <div class="summary-row"><span>Base fare (1 passenger)</span><span>R25</span></div>
+          <div class="summary-row"><span>Service fee</span><span>R2</span></div>
+          <hr>
+          <div class="summary-row total"><span>Total</span><span>R27</span></div>
+
+          <button class="button-primary" onclick="window.location.href='confirm.html'">
+            Confirm Booking
+          </button>
+
+          <p class="terms">By booking, you agree to our Terms of Service and Privacy Policy</p>
+        </div>
+
+        <!-- Driver Info -->
+        <div class="card">
+          <h3 class="card-title">Driver Information</h3>
+          <div class="driver-info">
+            <div class="driver-avatar">👤</div>
+            <div>
+              <p class="driver-name">John Smith</p>
+              <p class="driver-rating">⭐ 4.8</p>
+              <p class="driver-vehicle">🚗 Toyota Hiace - ABC 123</p>
+              <p class="driver-phone">📞 +27 078 358 4725</p>
+            </div>
+          </div>
+          <button class="button-outline">Contact Driver</button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</body>
+</html>
